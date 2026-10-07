@@ -21,8 +21,8 @@ app_ui = ui.page_sidebar(
             value=0.65,
             step=0.01,
         ),
-        # Relationship Preset Buttons
-        ui.label("Relationship Presets:"),
+        # Relationship Preset Buttons Label (Fixed: replaced ui.label with ui.p)
+        ui.p("Relationship Presets:", class_="fw-bold mb-1"),
         ui.layout_columns(
             ui.input_action_button(
                 "btn_pos", "Positive (+0.75)", class_="btn-sm btn-outline-success"
